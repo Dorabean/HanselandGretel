@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hansel and Gretel</string>
+
+    <string name="success_login">로그인 성공</string>
+    <string name="failed_login">로그인 실패</string>
+
+    <string name="success_signup">회원가입 성공</string>
+    <string name="failed_signup">회원가입 실패</string>
+
+
+</resources>

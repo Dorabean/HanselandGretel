@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "31710324417",
+    "firebase_url": "https://hansel-and-gretel-906bb.firebaseio.com",
+    "project_id": "hansel-and-gretel-906bb",
+    "storage_bucket": "hansel-and-gretel-906bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31710324417:android:952ef2d50b97e0bb",
+        "android_client_info": {
+          "package_name": "com.example.hg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31710324417-covdhjg257n93flvmr84i8jvjek8fj1m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW-wjDHM31A2OODb9R1Qy_jpMG-OJ2Gv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31710324417-covdhjg257n93flvmr84i8jvjek8fj1m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31710324417:android:d4e785e364cd5fe1",
+        "android_client_info": {
+          "package_name": "com.example.hhgg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31710324417-covdhjg257n93flvmr84i8jvjek8fj1m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW-wjDHM31A2OODb9R1Qy_jpMG-OJ2Gv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31710324417-covdhjg257n93flvmr84i8jvjek8fj1m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31710324417:android:13c3c6a65bcbec53",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31710324417-covdhjg257n93flvmr84i8jvjek8fj1m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW-wjDHM31A2OODb9R1Qy_jpMG-OJ2Gv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31710324417-covdhjg257n93flvmr84i8jvjek8fj1m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
