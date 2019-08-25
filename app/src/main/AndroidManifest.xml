@@ -5,6 +5,10 @@
     android:versionName="1.0">
 
     <uses-permission android:name="android.permission.INTERNET" />
+ <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -24,6 +28,13 @@
         <activity android:name="com.example.hg.MainActivity"/>
         <activity android:name="com.example.hg.join" />
         <activity android:name="com.example.hg.quiz" />
+        <activity android:name="com.example.hg.ClassifierActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
     </application>
 

@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".MainActivity">
 
     <ImageView
@@ -13,7 +14,7 @@
         android:layout_height="262dp"
         android:layout_marginTop="35dp"
         android:layout_marginBottom="263dp"
-        android:src="@drawable/img"
+        android:src="@drawable/hag"
         android:text="헨젤과 그레텔"
         app:layout_constraintBottom_toTopOf="@+id/dod"
         app:layout_constraintLeft_toLeftOf="parent"
