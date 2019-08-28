@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+/*
 
         //키제출 버튼 클릭시
         key.setOnClickListener(new Button.OnClickListener() {
@@ -69,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 mOnPopupClick(view);
             }
         });
+*/
 
     }
 

@@ -22,9 +22,11 @@ import android.graphics.Canvas;
 import android.graphics.Typeface;
 import android.media.ImageReader.OnImageAvailableListener;
 import android.os.SystemClock;
+import android.util.Log;
 import android.util.Size;
 import android.util.TypedValue;
 import android.view.Display;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -103,21 +105,30 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
                         final List<Classifier.Recognition> results = new ArrayList<>();
 
                         if (r.getConfidence() > 0.7) {
-                            String lline[]=r.getTitle().split(" ");//
-                            for(int i = 0; i < lline.length; i++){
-                                Classifier.Recognition tmp =
-                                        new Classifier.Recognition(r.getId(),lline[i],
-                                                r.getConfidence(), r.getLocation());
-                                results.add(tmp);
-                                try {
-                                    Thread.sleep(1000);
-                                } catch (InterruptedException e) {
-                                    e.printStackTrace();
-                                }
-                                LOGGER.i("Detect: %s", tmp);
-                            }//
+                            String[] lline=r.getTitle().split("");
+                            int linelen=lline.length;//
+                            int n = linelen / 10;
+                            for (int i=0; i<n+1;i++){
+                                if(i!=n) {
+                                    String listline = r.getTitle().substring(10 * i, 10 * i + 10);
+                                    Classifier.Recognition tmp = new Classifier.Recognition(r.getId(),listline,r.getConfidence(), r.getLocation());
+                                    results.add(tmp);
+                                }else {
+                                    String listline = r.getTitle().substring(10 * i, lline.length-1);
+                                    Classifier.Recognition tmp = new Classifier.Recognition(r.getId(),listline,r.getConfidence(), r.getLocation());
+                                    results.add(tmp);
+                                }}
+                            /*for(int i = 0; i < lline.length; i++){
+                                Classifier.Recognition tmp = new Classifier.Recognition(r.getId(),lline[i],r.getConfidence(), r.getLocation());
+                                    results.add(tmp);
+                                    try {
+                                        Thread.sleep(1000);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                    LOGGER.i("Detect: %s", tmp);
+                                }//*/
                         }
-
                         //LOGGER.i("Detect: %s", results);
                         if (resultsView == null) {
                             resultsView = findViewById(R.id.results);

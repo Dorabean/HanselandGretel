@@ -28,7 +28,7 @@ import java.util.List;
 import com.example.hg.Classifier.Recognition;
 
 public class RecognitionScoreView extends View implements ResultsView {
-    private static final float TEXT_SIZE_DIP = 30;
+    private static final float TEXT_SIZE_DIP = 20;
     private List<Recognition> results;
     private final float textSizePx;
     private final Paint fgPaint;
@@ -52,13 +52,13 @@ public class RecognitionScoreView extends View implements ResultsView {
     @Override
     public void onDraw(final Canvas canvas) {
 
-        fgPaint.setColor(Color.WHITE);
+        fgPaint.setColor(Color.BLACK);
 
         if (results != null && results.size() > 0) {
             for(int i =0; i < results.size(); i++){
             final Recognition recog = results.get(i);
             final int x = (int)(canvas.getWidth() - fgPaint.measureText(recog.getTitle())) / 2;
-                int y = (int) (fgPaint.getTextSize() * (1.2f+i));
+                int y = (int) (fgPaint.getTextSize() * (2.0f+i));
             canvas.drawText(recog.getTitle(), x, y, fgPaint);}
         }
     }
